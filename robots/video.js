@@ -4,9 +4,9 @@ const state = require('./state.js')
 async function robot() {
     const content = state.load()
 
-    // await convertAllImages(content)
-    // await createAllSentenceImages(content)
-    // await createYoutubeThumbnail()
+    await convertAllImages(content)
+    await createAllSentenceImages(content)
+    await createYoutubeThumbnail()
     await createAfterEffectsScript(content)
 
     state.save(content)
