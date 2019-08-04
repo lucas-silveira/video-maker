@@ -4,6 +4,7 @@ const customSearch = google.customsearch('v1')
 const state = require('./state.js')
 
 const googleSearchCredentials = require('../credentials/google-search.json')
+
 async function robot() {
     const content = state.load()
 

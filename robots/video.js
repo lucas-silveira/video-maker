@@ -105,7 +105,7 @@ async function robot() {
             .out(`caption:${sentenceText}`)
             .write(outputFile, (error) => {
                 if (error) {
-                return reject(error)
+                    return reject(error)
                 }
     
                 console.log(`> [video-robot] Sentence created: ${outputFile}`)
@@ -130,7 +130,7 @@ async function robot() {
     }
 
     async function createAfterEffectsScript(content) {
-        await state.saveScript(content)
+        state.saveScript(content)
     }
 }
 
